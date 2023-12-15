@@ -180,13 +180,13 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 25px;
-  row-gap: 25px; /* отступ, если карточек будет больше */
+  row-gap: 25px; /* отступ, если будет больше карточек в списке */
   list-style: none;
 }
 
 .lots__card-list-item {
-  min-width: 334px;
-  min-height: 600px;
+  width: 334px;
+  height: 600px;
   transition: transform .2s;
 }
 
