@@ -4,8 +4,8 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
-  height: 105px;
   margin: 92px 24px 96px;
+  height: 105px;
   font-weight: 400;
   font-size: 18px;
 }
@@ -64,6 +64,7 @@
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 755px;
 }
 
 .overlay {
@@ -124,7 +125,7 @@
   font-weight: 400;
   font-size: 22px;
   font-style: normal;
-  line-height: 127.273%;
+  line-height: 28px;
   text-transform: uppercase;
   word-spacing: 18px;
 }
@@ -139,6 +140,7 @@
   line-height: normal;
   text-transform: uppercase;
   background-color: transparent;
+  cursor: pointer;
 }
 
 /* lots */
@@ -219,6 +221,9 @@
   font-size: 20px;
   font-style: normal;
   line-height: 24px;
+}
+
+.lots a {
   text-decoration: none;
 }
 
@@ -247,35 +252,30 @@
 }
 
 .about__logo {
-  background-color: #000;
   display: flex;
+  justify-self: center;
   justify-content: center;
   align-items: center;
   width: 240px;
   height: 240px;
-  border-radius: 120px;
   margin: 0 95px;
-  justify-self: center;
+  border-radius: 120px;
+  background-color: #000;
 }
 
 .about__logo-image {
-
   width: 148px;
 }
 
-.about__paragraph {
-  /* margin-left: 25px; */
-}
-
 .about__title {
-  color: #000;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
   margin-top: 101px;
   margin-bottom: 100px;
+  color: #000;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .about__text {
@@ -286,39 +286,39 @@
 
 .about__text-paragraph {
   color: #000;
+  font-weight: 400;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
 }
 
 /* footer */
 
 .footer {
-  margin: 0 24px 90px;
   display: flex;
   justify-content: space-between;
   gap: 211px;
+  margin: 0 24px 90px;
 }
 
 .footer__address {
-  white-space: nowrap;
-  text-underline-position: under;
   color: #000;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 24.3px; /* 135% */
+  text-underline-position: under;
+  white-space: nowrap;
 }
 
 .footer__menu-list {
-  list-style: none;
-  text-align: center;
   color: #000;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
+  text-align: center;
+  list-style: none;
 }
 
 .footer__menu-link {
