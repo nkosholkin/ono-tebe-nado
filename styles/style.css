@@ -4,8 +4,8 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
-  margin: 92px 24px 96px;
   height: 105px;
+  margin: 92px 24px 96px;
   font-weight: 400;
   font-size: 18px;
 }
@@ -64,7 +64,6 @@
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 755px;
 }
 
 .overlay {
