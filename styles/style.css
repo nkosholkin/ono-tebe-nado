@@ -39,6 +39,17 @@
   height: 105px;
 }
 
+/* немного экспериментов с :hover
+Можно было вынести и в global.css но для опыта оставил тут */
+
+.logo-accent:hover::before {
+  transform: scale(1.1);
+}
+
+.logo-accent:hover {
+  box-shadow: 0 0 75px #6810ff;
+}
+
 .header__logo-image {
   height: 100%;
 }
@@ -139,6 +150,14 @@
   text-transform: uppercase;
   background-color: transparent;
   cursor: pointer;
+  transition: transform .2s;
+}
+
+/* немного экспериментов с :hover
+Можно было вынести и в global.css но для опыта оставил тут */
+
+.bet-button:hover {
+  transform: scale(1.1);
 }
 
 /* lots */
@@ -148,7 +167,7 @@
 }
 
 .lots__heading {
-  padding-left: 26px;
+  padding: 0 0 27px 26px;
   color: #000;
   font-weight: 700;
   font-size: 40px;
@@ -161,13 +180,21 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 25px;
+  row-gap: 25px; /* отступ, если карточек будет больше */
   list-style: none;
 }
 
 .lots__card-list-item {
-  margin-top: 27px;
   min-width: 334px;
   min-height: 600px;
+  transition: transform .2s;
+}
+
+/* немного экспериментов с :hover
+Можно было вынести и в global.css но для опыта оставил тут */
+
+.lots__card-list-item:hover {
+  transform: scale(1.05);
 }
 
 .card-link {
@@ -232,6 +259,18 @@
   font-style: normal;
   line-height: normal;
   text-underline-position: under;
+}
+
+/* немного экспериментов с :hover
+Можно было вынести и в global.css но для опыта оставил тут */
+
+.text-link-accent:hover::before {
+  transform: scale(1.2);
+}
+
+.text-link-accent:hover {
+  color: #6810ff;
+  text-shadow: 0 0 5px #af1d00;
 }
 
 /* about */
@@ -332,4 +371,5 @@
 
 .footer__social-icon {
   height: 48px;
+  border-radius: 120px; /* для красивой анимации :hover - см .logo-accent в style.css */
 }
